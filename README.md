@@ -1,5 +1,5 @@
 <div align="center">
-<img align="center" src="" width="800px" >
+<img align="center" src="https://cdn.discordapp.com/attachments/1007506642901934123/1097402731905425498/1681711591924.png" width="400px" >
  
  <h1 align="center">StreamHunter</h1>   
 
