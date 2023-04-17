@@ -1,11 +1,12 @@
 <div align="center">
-<img align="center" src="https://cdn.discordapp.com/attachments/1007506642901934123/1097402731905425498/1681711591924.png" width="400px" >
- 
- <h1 align="center">StreamHunter</h1>   
+<img align="center" src="https://cdn.discordapp.com/attachments/1007506642901934123/1097402731905425498/1681711591924.png" width="400px" >  
 
+ #  
 <h3 align="center">StreamHunter is a program that searches streamable videos automatically using brute force.</h3>
 </div>
 
+#  
+<br>
 
 # Images
 
