@@ -27,7 +27,6 @@ print("""
     |_____|_| |_| |___|__,|_|_|_|__|__|___|_|_|_| |___|_|  
 
                 Created by github.com/Eltotiz
-                
                 """)
 input(" [+] Press enter to start!")
 print()
@@ -49,6 +48,6 @@ while value <= 1000000000000000000000000000000000000000:
         else:
             print(Fore.GREEN + f' [+] https://streamable.com/{minus} VALID LINK')
                 
-    except KeyboardInterrupt:
+    except Exception:
         print()
         print(" [?] There was an error connecting to stremeable.com ...")
