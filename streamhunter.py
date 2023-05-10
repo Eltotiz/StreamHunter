@@ -12,13 +12,12 @@ import string
 
 def clear():
     if os.name == "posix":
-        os.system ("clear")
+        os.system("clear")
     elif os.name == ("ce", "nt", "dos"):
-        os.system ("cls")
+        os.system("cls")
+
 
 clear()
-
-
 print()
 print("""                                                       
      _____ _                     _____         _           
@@ -48,6 +47,6 @@ while value <= 1000000000000000000000000000000000000000:
         else:
             print(Fore.GREEN + f' [+] https://streamable.com/{minus} VALID LINK')
                 
-    except Exception:
+    except Exception as e:
         print()
-        print(" [?] There was an error connecting to stremeable.com ...")
+        print(" [?] There was an error connecting to streamable.com ...")
