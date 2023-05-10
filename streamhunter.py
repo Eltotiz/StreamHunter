@@ -3,7 +3,7 @@
 # Author github.com/Eltotiz
 
 import os
-from colorama import Fore, init, Style
+from colorama import Fore, init
 import requests
 import time
 import random
