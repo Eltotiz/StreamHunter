@@ -9,6 +9,8 @@ import time
 import random
 import string
 
+init(convert=True)
+
 
 def clear():
     if os.name == "posix":
