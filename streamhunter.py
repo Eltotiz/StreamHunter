@@ -33,19 +33,14 @@ print(" [+] Searching videos...")
 print()
 print()
 
-value = 1
-
-while value <= 1000000000000000000000000000000000000000:
-    value += 1
-    text = ''.join(random.choice(string.ascii_letters + string.digits) for _ in range(6))
+while True:
+    text = "".join(random.choice(string.ascii_letters + string.digits) for _ in range(6))
     minus = text.lower()
     time.sleep(1)
     src = requests.get(f'https://streamable.com/{minus}')
     try:
-        if src.status_code == 404:
-            Lol = "Hello :)"
-        else:
-            print(Fore.GREEN + f' [+] https://streamable.com/{minus} VALID LINK')
+        if src.status_code != 404:
+            print(Fore.GREEN + f" [+] https://streamable.com/{minus} VALID LINK")
                 
     except Exception as e:
         print()
