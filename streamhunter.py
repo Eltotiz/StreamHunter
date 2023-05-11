@@ -33,7 +33,6 @@ input(" [+] Press enter to start!")
 print()
 print(" [+] Searching videos...")
 print()
-print()
 
 while True:
     text = "".join(random.choice(string.ascii_letters + string.digits) for _ in range(6))
