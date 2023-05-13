@@ -46,17 +46,20 @@ while True:
         try:
             if src.status_code != 404:
                 print(Fore.GREEN + f" [+] https://streamable.com/{minus} VALID LINK")
+                file.writelines(datetime.datetime.now().strftime("%H:%M:%S") + f" Found valid link! https://streamable.com/{minus}\n")
 
         except Exception as e:
             print()
             print(" [?] There was an error connecting to streamable.com.")
             print(f" [?] Error message: {e}")
             input(" [?] Press enter to quit.")
+            file.writelines(datetime.datetime.now().strftime("%H:%M:%S") + " Service stopped due to error.\n")
             file.close()
             exit(0)
     except KeyboardInterrupt:
         print(" [+] Quitting program...")
         input(" [+] Press enter to quit.")
+        file.writelines(datetime.datetime.now().strftime("%H:%M:%S") + " Service stopped!\n")
         file.close()
         exit(0)
         break
