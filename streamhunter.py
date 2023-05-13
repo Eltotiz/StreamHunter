@@ -49,7 +49,7 @@ while True:
 
         except Exception as e:
             print()
-            print(" [?] There was an error connecting to streamable.com...")
+            print(" [?] There was an error connecting to streamable.com.")
             print(f" [?] Error message: {e}")
             input(" [?] Press enter to quit.")
             file.close()
