@@ -1,6 +1,3 @@
-#!/usr/bin/python
-# coding=utf-8
-# Author github.com/Eltotiz
 import datetime
 import os
 import sys
