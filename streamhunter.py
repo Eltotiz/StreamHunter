@@ -18,6 +18,8 @@ def clear():
         os.system("clear")
     elif os.name == ("ce", "nt", "dos"):
         os.system("cls")
+    else:
+        print(" [?] Clearing is not supported on your OS.")
 
 
 clear()
