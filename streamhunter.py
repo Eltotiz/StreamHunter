@@ -1,8 +1,9 @@
 #!/usr/bin/python
 # coding=utf-8
 # Author github.com/Eltotiz
-
+import datetime
 import os
+import sys
 from colorama import Fore, init
 import requests
 import time
@@ -29,8 +30,11 @@ print("""
 
                 Created by github.com/Eltotiz
                 """)
+file = open(sys.path[0] + "\\StreamHunter_out.txt", "a")
+file.truncate(0)
 input(" [+] Press enter to start!")
-print(" [+] Searching videos...")
+file.writelines(datetime.datetime.now().strftime("%H:%M:%S") + " StreamHunter Service started.\n")
+print(" [+] Searching for videos...")
 print()
 
 while True:
@@ -48,9 +52,11 @@ while True:
             print(" [?] There was an error connecting to streamable.com...")
             print(f" [?] Error message: {e}")
             input(" [?] Press enter to quit.")
-        exit(0)
+            file.close()
+            exit(0)
     except KeyboardInterrupt:
         print(" [+] Quitting program...")
         input(" [+] Press enter to quit.")
+        file.close()
         exit(0)
         break
