@@ -1,0 +1,5 @@
+{
+    "package": "NoahOnFyre/Streamhunter",
+    "manifest_version": 1,
+    "main": "streamhunter.py"
+}
